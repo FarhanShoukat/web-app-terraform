@@ -110,7 +110,7 @@ sudo unzip archive.zip -d /var/www/html
 EOF
 }
 
-resource "aws_autoscaling_group" "bar" {
+resource "aws_autoscaling_group" "web" {
   vpc_zone_identifier  = aws_subnet.private[*].id
   launch_configuration = aws_launch_configuration.as_conf.name
   max_size             = var.max_instances

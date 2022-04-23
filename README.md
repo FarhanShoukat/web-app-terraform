@@ -21,6 +21,12 @@ AWS Command Line Interface (AWS CLI) and Terraform need to be installed and conf
 ## How to run
 
 * Upload your zipped build archive to the S3 bucket. A sample hello world build archive is included [here](./project-archive.zip).
+* Initialize Terraform project. This will download the required provider files.
+
+```bash
+terraform init
+```
+
 * Deploy the application
 
 ```bash
